@@ -32,7 +32,13 @@ router.post('/register', async (req,res) => {
     const xyz = new User({
         name: req.body.name,
         email: req.body.email,
-        password: hashedPassword
+        password: hashedPassword,
+        type: req.body.type,
+        contact: req.body.contact,
+        main_doc_name: req.body.main_doc_name,
+        latitude: req.body.latitude,
+       // longi: req.user.longi,
+        xyz: req.body.xyz
     });
     console.log(xyz);
     try{

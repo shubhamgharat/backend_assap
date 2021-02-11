@@ -42,6 +42,6 @@ app.use(express.json());
 
 
 //Route middlewares
-app.use('/api/user', authRoute);
+app.use('/api/hospital', authRoute);
 
 app.listen(3000, () => console.log('Server up and running'));

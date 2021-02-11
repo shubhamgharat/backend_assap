@@ -22,6 +22,36 @@ const userSchema = new mongoose.Schema({
     date: {
         type: Date,
         default: Date.now
+    },
+    type: {
+        type: String,
+        required: true,
+        min: 3
+    },
+    contact: {
+        type: String,
+        required: true,
+        min: 6
+    },
+    main_doc_name: {
+        type: String,
+        required: true,
+        min: 6
+    },
+    latitude: {
+        type: String,
+        required: true,
+        min: 6
+    },
+    // longi: {
+    //     type: String,
+    //     required: true,
+    //     min: 6
+    // },
+    xyz: {
+        type: String,
+        required: true,
+        min: 6
     }
 });
 
